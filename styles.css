@@ -43,7 +43,7 @@ body{
 .header-inner{display:flex;align-items:center;gap:16px;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
 .logo-img{
-  /* UPDATED: Styling for the PNG logo */
+  /* FIXED: Styling for the PNG logo is now robust */
   width:64px;height:64px;object-fit:contain;border-radius:8px;
   border:1px solid rgba(0,0,0,0.08);
   background:transparent;padding:6px;display:block;
@@ -118,7 +118,7 @@ body{
 /* Ensure footer contents are centered vertically */
 .footer-inner{display:flex;justify-content:space-between;align-items:center} 
 
-/* Style for the support email link */
+/* Style for the support email link (RE-ADDED) */
 .support-link{
     color:rgba(255,255,255,0.7);
     text-decoration:none;
