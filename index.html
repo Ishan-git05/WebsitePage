@@ -13,17 +13,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#" aria-label="The Travel Tribe homepage">
-        <!-- Image + SVG fallback: if assets/logo.png cannot be loaded the SVG will show -->
-        <img src="assets/logo.png"
-             srcset="assets/logo.png 1x, assets/logo@2x.png 2x"
-             alt="The Travel Tribe logo"
-             class="logo-img"
-             width="64" height="64"
-             loading="lazy"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-
-        <!-- Inline SVG fallback (hidden by default) -->
-        <svg class="logo-svg" viewBox="0 0 100 100" aria-hidden="true" role="img" style="display:none">
+        
+        <svg class="logo-svg" viewBox="0 0 100 100" aria-hidden="true" role="img">
           <defs>
             <linearGradient id="g" x1="0" x2="1">
               <stop offset="0" stop-color="#0ea5a4"/>
@@ -241,7 +232,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <strong>The Travel Tribe</strong> 2025 — Built with HTML & CSS</div>
-      <div class="muted">Made for prototypes and design exploration.</div>
+      
+      <div class="support-contact">
+          <a href="mailto:thetraveltribe25@gmail.com" class="muted support-link">Support: thetraveltribe25@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>
