@@ -42,13 +42,13 @@ body{
 }
 .header-inner{display:flex;align-items:center;gap:16px;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-/* Removed .logo-img styling as it's no longer used */
-.logo-svg{
-  width:64px;height:64px;flex:0 0 auto;
-  border-radius:8px;
+.logo-img{
+  /* UPDATED: Styling for the PNG logo */
+  width:64px;height:64px;object-fit:contain;border-radius:8px;
   border:1px solid rgba(0,0,0,0.08);
-  padding:6px;
+  background:transparent;padding:6px;display:block;
 }
+/* Removed .logo-svg styling as it's no longer used */
 .brand-name{font-weight:800;font-family:Poppins, Inter, sans-serif;font-size:18px;color:var(--text)}
 .nav{display:flex;gap:18px;align-items:center}
 .nav a{color:rgba(255,255,255,0.9);text-decoration:none;font-weight:600;font-size:14px}
@@ -118,7 +118,7 @@ body{
 /* Ensure footer contents are centered vertically */
 .footer-inner{display:flex;justify-content:space-between;align-items:center} 
 
-/* NEW: Style for the support email link */
+/* Style for the support email link */
 .support-link{
     color:rgba(255,255,255,0.7);
     text-decoration:none;
@@ -149,7 +149,7 @@ body{
   .nav{display:none}
   .cta{padding:8px 10px}
   
-  /* NEW: Stack footer items on mobile */
+  /* Stack footer items on mobile */
   .footer-inner{flex-direction:column;gap:8px;text-align:center}
 }
 
