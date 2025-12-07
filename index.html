@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NextGen — Modern Static Landing</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta for theme color on mobile -->
+  <meta name="theme-color" content="#0f1724">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#7c3aed" />
+              <stop offset="1" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="10" fill="url(#g)"></rect>
+          <path d="M15 30 L24 18 L33 30" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span>NextGen</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"></path>
+          </svg>
+        </button>
+        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Decorative background shapes -->
+    <div class="bg-shapes" aria-hidden="true">
+      <span class="shape s1"></span>
+      <span class="shape s2"></span>
+      <span class="shape s3"></span>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Build pixel-perfect, future-ready interfaces</h1>
+          <p class="lead">A modern static starter crafted with accessibility, performance and delightful micro-interactions in mind. No frameworks required — pure HTML & CSS (plus tiny JS for niceties).</p>
+
+          <div class="actions">
+            <a class="btn btn-cta" href="#showcase">Explore demo</a>
+            <a class="btn btn-ghost" href="#features">Why NextGen</a>
+          </div>
+
+          <ul class="stats" aria-hidden="true">
+            <li><strong>95%</strong><span>Performance</span></li>
+            <li><strong>99%</strong><span>Accessibility</span></li>
+            <li><strong>100ms</strong><span>Interaction</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-panel" aria-hidden="false" role="region" aria-label="Preview">
+          <div class="card-preview">
+            <div class="preview-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="preview-body">
+              <h3>Product Dashboard</h3>
+              <p class="muted">Realtime metrics, modern design tokens and delightful micro-animations.</p>
+
+              <div class="metrics">
+                <div class="m">
+                  <span class="m-val">1.2k</span>
+                  <span class="m-label">Active</span>
+                </div>
+                <div class="m">
+                  <span class="m-val">98%</span>
+                  <span class="m-label">Uptime</span>
+                </div>
+                <div class="m">
+                  <span class="m-val">4.9</span>
+                  <span class="m-label">Satisfaction</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="preview-footer">
+              <button class="small">View details</button>
+              <button class="small ghost">Export</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2 class="section-title">Why you'll love it</h2>
+      <p class="section-sub">A set of thoughtful defaults that make building static sites a pleasure.</p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="f-ico">⚡</div>
+          <h3>Fast by default</h3>
+          <p>Minimal markup and CSS optimizations mean fast paint times and snappy interactions.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="f-ico">🎨</div>
+          <h3>Design tokens</h3>
+          <p>Color variables, spacing scale and typographic rhythm that are easy to extend.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="f-ico">🔒</div>
+          <h3>Accessible</h3>
+          <p>High contrast modes, visible focus states, and semantic structure out-of-the-box.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="f-ico">♻️</div>
+          <h3>Small & maintainable</h3>
+          <p>Organized CSS with utilities and components — keep your code readable and simple.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="showcase" class="showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-item">
+          <div class="glass">
+            <h4>Landing Pages</h4>
+            <p>Beautiful, fast and conversion-focused layouts ready to be cloned.</p>
+            <a href="#" class="link">View templates →</a>
+          </div>
+        </div>
+
+        <div class="showcase-item">
+          <div class="glass">
+            <h4>Documentation</h4>
+            <p>Readable, search-friendly docs that feel native to your product.</p>
+            <a href="#" class="link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="showcase-item">
+          <div class="glass">
+            <h4>Marketing</h4>
+            <p>Convert visitors with attractive hero sections and clear CTAs.</p>
+            <a href="#" class="link">See examples →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing">
+      <h2 class="section-title">Simple pricing</h2>
+      <div class="pricing-grid" aria-hidden="false">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price">$0 <span>/ forever</span></p>
+          <ul>
+            <li>Static pages</li>
+            <li>Basic components</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn btn-outline">Get starter</button>
+        </div>
+
+        <div class="price-card popular">
+          <div class="ribbon">Popular</div>
+          <h3>Pro</h3>
+          <p class="price">$9 <span>/ month</span></p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>Design tokens</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-primary">Start free trial</button>
+        </div>
+
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <p class="price">Custom</p>
+          <ul>
+            <li>SSO & integrations</li>
+            <li>Custom branding</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact us</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="contact-card">
+        <h2>Ready to start?</h2>
+        <p>Drop your email and we'll send starter files and tips to get you going.</p>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! (demo)');">
+          <input type="email" placeholder="you@company.com" aria-label="Email" required>
+          <button type="submit" class="btn btn-cta">Send me starter</button>
+        </form>
+
+        <p class="muted small">No spam. Unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <span>© <span id="year"></span> NextGen — Built with HTML & CSS</span>
+      </div>
+
+      <div class="foot-right">
+        <a href="#" class="muted">Privacy</a>
+        <a href="#" class="muted">Terms</a>
+        <a href="#" class="muted">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small JS for theme toggle & year
+    (function(){
+      const btn = document.getElementById('themeToggle');
+      const root = document.documentElement;
+      const stored = localStorage.getItem('nextgen-dark');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      function setDark(d){
+        if(d) root.classList.add('dark');
+        else root.classList.remove('dark');
+        localStorage.setItem('nextgen-dark', d ? '1' : '0');
+      }
+
+      if(stored !== null) setDark(stored === '1');
+      else setDark(prefersDark);
+
+      btn.addEventListener('click', () => setDark(!root.classList.contains('dark')));
+
+      // current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
