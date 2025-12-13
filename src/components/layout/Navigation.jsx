@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Compass } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Navigation = () => {
@@ -40,10 +40,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <Compass className="w-8 h-8 text-primary-400 group-hover:text-primary-300 transition-colors" />
-              <div className="absolute inset-0 bg-primary-400/20 rounded-full blur-lg group-hover:bg-primary-300/30 transition-colors" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="The Travel Tribe Logo"
+              className="h-12 w-auto object-contain group-hover:opacity-90 transition-opacity"
+            />
             <span className="text-xl font-display font-bold gradient-text">
               The Travel Tribe
             </span>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, Instagram, Facebook, Twitter, Youtube, Compass } from 'lucide-react'
+import { Mail, Instagram, Facebook, Twitter, Youtube } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -33,7 +33,11 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Compass className="w-8 h-8 text-primary-400" />
+              <img
+                src="/logo.png"
+                alt="The Travel Tribe Logo"
+                className="h-12 w-auto object-contain"
+              />
               <span className="text-xl font-display font-bold gradient-text">
                 The Travel Tribe
               </span>
