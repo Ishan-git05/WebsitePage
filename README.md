@@ -32,8 +32,8 @@ A premium, production-ready travel and tourism management website built with Rea
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd "Tublu Da Travel Website"
+git clone https://github.com/kinshuk-code-1729/TravelWebApp.git
+cd TravelWebApp
 ```
 
 2. Install dependencies:
@@ -166,4 +166,3 @@ For support, email thetraveltribe25@gmail.com
 ---
 
 Built with ❤️ by The Travel Tribe
-
